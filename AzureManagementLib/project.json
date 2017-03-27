@@ -1,0 +1,30 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Microsoft.Azure.Management.AppService.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Batch.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Cdn.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Compute.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Dns.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.KeyVault.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Network.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Redis.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.ResourceManager.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Sql.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.Storage.Fluent": "1.0.0-beta50",
+    "Microsoft.Azure.Management.TrafficManager.Fluent": "1.0.0-beta50",
+    "Microsoft.IdentityModel.Clients.ActiveDirectory": "3.13.8",
+    "Microsoft.NETCore.Platforms": "1.1.0",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "Microsoft.Rest.ClientRuntime": "2.3.5",
+    "NETStandard.Library": "1.6.1",
+    "System.Diagnostics.Tools": "4.3.0",
+    "System.Net.Http": "4.3.1",
+    "System.Runtime.Serialization.Primitives": "4.3.0",
+    "System.Threading.Tasks": "4.3.0"
+  },
+  "frameworks": {
+    "netstandard1.5": {}
+  }
+}

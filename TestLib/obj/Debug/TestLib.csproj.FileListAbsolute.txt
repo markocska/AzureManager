@@ -1,0 +1,9 @@
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\bin\Debug\TestLib.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\obj\Debug\TestLib.csprojResolveAssemblyReference.cache
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\obj\Debug\TestLib.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\bin\Debug\TestLib.exe
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\TestLib\obj\Debug\TestLib.exe

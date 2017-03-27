@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionMenuView1">
+        <AutoCompleteTextView
+            android:gravity="center"
+            android:text="Search"
+            android:id="@+id/searchTestView"
+            android:layout_width="180.0dp"
+            android:layout_height="wrap_content"
+            android:width="150dp" />
+        <Button
+            android:text="Options"
+            android:id="@+id/optionsButton"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ActionMenuView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/sqlServerRecyclerView"
+        android:layout_marginBottom="333.0dp" />
+</LinearLayout>

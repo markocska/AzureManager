@@ -1,0 +1,15 @@
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.csprojResolveAssemblyReference.cache
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
