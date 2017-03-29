@@ -18,6 +18,7 @@ C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\o
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Microsoft.Rest.ClientRuntime.Azure.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Microsoft.Rest.ClientRuntime.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Newtonsoft.Json.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Xamarin.Android.Support.Core.UI.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll

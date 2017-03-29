@@ -26,7 +26,11 @@ namespace HelloAndroid.ViewHolders
 
         public SqlServerViewHolder(View itemView): base(itemView)
         {
-
+            ServerName = itemView.FindViewById<TextView>(Resource.Id.sqlServerName);
+            ResourceGroupName = itemView.FindViewById<TextView>(Resource.Id.sqlResourceGroupName);
+            Status = itemView.FindViewById<TextView>(Resource.Id.sqlStatus);
+            Location = itemView.FindViewById<TextView>(Resource.Id.sqlLocation);
+            SubscriptionName = itemView.FindViewById<TextView>(Resource.Id.sqlSubscriptionName);
         }
 
       

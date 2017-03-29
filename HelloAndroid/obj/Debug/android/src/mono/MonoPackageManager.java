@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		"Microsoft.Rest.ClientRuntime.Azure.dll",
 		"Microsoft.Rest.ClientRuntime.dll",
 		"Newtonsoft.Json.dll",
+		"Xamarin.Android.Support.v7.CardView.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.Core.UI.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",

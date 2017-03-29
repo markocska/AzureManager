@@ -23,17 +23,17 @@ namespace HelloAndroid
     {
         int count = 1;
         PlatformParameters platformParam;
-        private AzureResourceManager azureResourceManager;
+        AzureResourceManager azureResourceManager;
+
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager layoutManager;
-        SqlServerAdapter sqlServerAdapter ;
+        SqlServerAdapter sqlServerAdapter;
         List<SqlServerModelView> sqlServerList;
-        
-       
 
-        protected override void OnCreate(Bundle bundle)
+
+        protected async override void OnCreate(Bundle bundle)
         {
-            
+
             base.OnCreate(bundle);
 
             platformParam = new PlatformParameters(this, true);
@@ -45,34 +45,39 @@ namespace HelloAndroid
             layoutManager = new LinearLayoutManager(this);
             mRecyclerView.SetLayoutManager(layoutManager);
 
-            sqlServerAdapter = new SqlServerAdapter(sqlServerList);
-            mRecyclerView.SetAdapter(sqlServerAdapter);
-
             Button optionsButton = FindViewById<Button>(Resource.Id.optionsButton);
 
-            optionsButton.Click += async (object sender, EventArgs e) =>
-            {
+            optionsButton.Click += (object sender, EventArgs e) =>
+           {
                 //Dictionary<string,string> dict = await AuthenticationManager.GetAccessTokenAsync("lucu", platformParam);
                 try
-                {
-                    
-                    List<SqlServerModelView> sqlServersTask =  await azureResourceManager.SqlDbManager.GetSqlServersAsync().ConfigureAwait(false);
-                    sqlServerAdapter.SqlServerViews = sqlServersTask;
-                    
-                }
-                catch (Exception ex)
-                {
-                    string exc = ex.Message;
-                }
-            };
+               {
+               }
+               catch (Exception ex)
+               {
+                   string exc = ex.Message;
+               }
+           };
 
-            ThreadPool.QueueUserWorkItem(o => LoginHandler());
-            //   new Thread(new ThreadStart(async () => { await azureResourceManager = AzureResourceManager.Create(platformParam); }))  
-            
+            await LoginHandler();
+            try
+            {
+                sqlServerList = await azureResourceManager.SqlDbManager.GetSqlServersAsync().ConfigureAwait(false);
+                RunOnUiThread(() =>
+                {
+                    sqlServerAdapter = new SqlServerAdapter(sqlServerList);
+
+                    mRecyclerView.SetAdapter(sqlServerAdapter);
+                });
+            }
+            catch (Exception e)
+            {
+
+            }
 
         }
 
-        public void LoginHandler()
+        public async Task LoginHandler()
         {
 
             AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
@@ -83,9 +88,10 @@ namespace HelloAndroid
             AlertDialog dialog = null;
             RunOnUiThread(() => { dialog = alertBuilder.Show(); });
             try
-            {          
-                azureResourceManager = AzureResourceManager.Create(platformParam).Result;
-            } catch (Exception e)
+            {
+                azureResourceManager = await AzureResourceManager.Create(platformParam);
+            }
+            catch (Exception e)
             {
 
             }
@@ -101,7 +107,7 @@ namespace HelloAndroid
                     alertBuilder.Dispose();
                 }
             }
-            
+
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)

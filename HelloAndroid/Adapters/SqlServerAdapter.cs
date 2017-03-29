@@ -7,47 +7,28 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using AzureManagementLib.ModelView;
-using Android.Support.V7.Widget;
 using HelloAndroid.ViewHolders;
 
 namespace HelloAndroid.Adapters
 {
-    public class SqlServerAdapter : RecyclerView.Adapter
+    public class SqlServerAdapter : AzureItemAdapter<SqlServerModelView>
     {
-        // public event EventHandler<int> ItemClick;
-
-        public List<SqlServerModelView> SqlServerViews { get; set; }
-
-        public override int ItemCount
+        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            get
-            {
-                if (SqlServerViews != null)
-                {
-                    return SqlServerViews.Count;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-        }
+            SqlServerViewHolder vh = holder as SqlServerViewHolder;
 
-        public SqlServerAdapter(List<SqlServerModelView> sqlServerList)
-        {
-            SqlServerViews = sqlServerList;
-        }
-
-        public SqlServerAdapter()
-        {
+            vh.Location.Text = AzureItemViews[position].Location;
+            vh.ServerName.Text = AzureItemViews[position].ServerName;
+            vh.ResourceGroupName.Text = AzureItemViews[position].ResourceGroupName;
+            vh.SubscriptionName.Text = AzureItemViews[position].SubscriptionName;
 
         }
 
-        public override RecyclerView.ViewHolder
-            OnCreateViewHolder(ViewGroup parent, int viewType)
+        public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             View itemView = LayoutInflater.From(parent.Context).
                 Inflate(Resource.Layout.SqlServerLayout, parent, false);
@@ -56,23 +37,9 @@ namespace HelloAndroid.Adapters
             return sqlVh;
         }
 
-
-        //void OnClick(int position)
-        //{
-        //    if (ItemClick != null)
-        //    {
-        //        ItemClick(this, position);
-        //    }
-        //}
-
-        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
+        public SqlServerAdapter(List<SqlServerModelView> sqlServerList) : base(sqlServerList)
         {
-            SqlServerViewHolder vh = holder as SqlServerViewHolder;
-
-            vh.Location.Text = SqlServerViews[position].Location;
-            vh.ServerName.Text = SqlServerViews[position].ServerName;
-            vh.ResourceGroupName.Text = SqlServerViews[position].ResourceGroupName;
-            vh.SubscriptionName.Text = SqlServerViews[position].SubscriptionName;
+            
         }
     }
 }
