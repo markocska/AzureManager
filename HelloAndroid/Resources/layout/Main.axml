@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
     <ActionMenuView
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/actionMenuView1">
         <AutoCompleteTextView
@@ -23,10 +23,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </ActionMenuView>
+    <TableLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2">
+        <TableRow>
+            <TextView
+                android:text="Basic info"
+                android:gravity="left" />
+            <TextView
+                android:text="Status"
+                android:gravity="center" />
+            <TextView
+                android:text="More"
+                android:gravity="right" />
+        </TableRow>
+    </TableLayout>
     <android.support.v7.widget.RecyclerView
         android:layout_width="fill_parent"
-        android:layout_height="390.0dp"
+        android:layout_height="fill_parent"
         android:scrollbars="vertical"
         android:id="@+id/sqlServerRecyclerView"
-        android:layout_marginBottom="333.0dp" />
+        android:layout_marginTop="0.0dp" />
 </LinearLayout>

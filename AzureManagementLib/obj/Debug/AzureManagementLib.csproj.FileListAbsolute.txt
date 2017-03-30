@@ -63,3 +63,13 @@ C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagemen
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\obj\Debug\AzureManagementLib.dll.mdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\AzureManagementLib\bin\Debug\AzureManagementLib.dll.mdb

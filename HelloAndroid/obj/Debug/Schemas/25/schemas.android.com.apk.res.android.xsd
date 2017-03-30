@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2017. 03. 29. 16:03:00</xs:documentation>
+    <xs:documentation>2017. 03. 30. 17:54:31</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17188,7 +17188,6 @@
             <xs:enumeration value="@id/item_touch_helper_previous_elevation" />
             <xs:enumeration value="@id/optionsButton" />
             <xs:enumeration value="@id/searchTestView" />
-            <xs:enumeration value="@id/sqlImage" />
             <xs:enumeration value="@id/sqlLocation" />
             <xs:enumeration value="@id/sqlResourceGroupName" />
             <xs:enumeration value="@id/sqlServerName" />
@@ -20498,6 +20497,18 @@
             <xs:enumeration value="?android:attr/textUnderlineThickness" />
             <xs:enumeration value="?android:attr/windowTitleSize" />
           </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_weight">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
         </xs:simpleType>
       </xs:union>
     </xs:simpleType>

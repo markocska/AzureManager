@@ -166,17 +166,16 @@ containing a value of this type.
     }
     public static final class id {
         public static final int actionMenuView1=0x7f050001;
-        public static final int agentWebView=0x7f05000b;
+        public static final int agentWebView=0x7f05000a;
         public static final int item_touch_helper_previous_elevation=0x7f050000;
         public static final int optionsButton=0x7f050003;
         public static final int searchTestView=0x7f050002;
-        public static final int sqlImage=0x7f050005;
-        public static final int sqlLocation=0x7f050009;
-        public static final int sqlResourceGroupName=0x7f050007;
-        public static final int sqlServerName=0x7f050006;
+        public static final int sqlLocation=0x7f050007;
+        public static final int sqlResourceGroupName=0x7f050009;
+        public static final int sqlServerName=0x7f050005;
         public static final int sqlServerRecyclerView=0x7f050004;
-        public static final int sqlStatus=0x7f050008;
-        public static final int sqlSubscriptionName=0x7f05000a;
+        public static final int sqlStatus=0x7f050006;
+        public static final int sqlSubscriptionName=0x7f050008;
     }
     public static final class layout {
         public static final int main=0x7f030000;

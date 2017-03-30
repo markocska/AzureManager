@@ -167,8 +167,8 @@ namespace HelloAndroid
 			// aapt resource value: 0x7f050001
 			public const int actionMenuView1 = 2131034113;
 			
-			// aapt resource value: 0x7f05000b
-			public const int agentWebView = 2131034123;
+			// aapt resource value: 0x7f05000a
+			public const int agentWebView = 2131034122;
 			
 			// aapt resource value: 0x7f050000
 			public const int item_touch_helper_previous_elevation = 2131034112;
@@ -179,26 +179,23 @@ namespace HelloAndroid
 			// aapt resource value: 0x7f050002
 			public const int searchTestView = 2131034114;
 			
-			// aapt resource value: 0x7f050005
-			public const int sqlImage = 2131034117;
+			// aapt resource value: 0x7f050007
+			public const int sqlLocation = 2131034119;
 			
 			// aapt resource value: 0x7f050009
-			public const int sqlLocation = 2131034121;
+			public const int sqlResourceGroupName = 2131034121;
 			
-			// aapt resource value: 0x7f050007
-			public const int sqlResourceGroupName = 2131034119;
-			
-			// aapt resource value: 0x7f050006
-			public const int sqlServerName = 2131034118;
+			// aapt resource value: 0x7f050005
+			public const int sqlServerName = 2131034117;
 			
 			// aapt resource value: 0x7f050004
 			public const int sqlServerRecyclerView = 2131034116;
 			
-			// aapt resource value: 0x7f050008
-			public const int sqlStatus = 2131034120;
+			// aapt resource value: 0x7f050006
+			public const int sqlStatus = 2131034118;
 			
-			// aapt resource value: 0x7f05000a
-			public const int sqlSubscriptionName = 2131034122;
+			// aapt resource value: 0x7f050008
+			public const int sqlSubscriptionName = 2131034120;
 			
 			static Id()
 			{

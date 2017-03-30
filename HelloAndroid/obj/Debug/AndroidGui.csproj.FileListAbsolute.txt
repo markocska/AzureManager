@@ -88,4 +88,3 @@ C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\o
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.CardView.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
 C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\obj\Debug\HelloAndroid.dll.mdb
-C:\Users\Marko\Documents\Visual Studio 2015\Projects\AzureManager\HelloAndroid\bin\Debug\HelloAndroid.dll.mdb
