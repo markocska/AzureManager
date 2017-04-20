@@ -34,9 +34,9 @@ namespace AzureManagementLib
         private static string Graph { get; } = "https://graph.windows.net";
         private static string ClientId { get; set; } = "48562591-a97e-4d68-b550-ff089a314bc0";
 
-        private static Uri RedirectUri { get; } = new Uri("https://AzureManager");      
+        private static Uri RedirectUri { get; } = new Uri("https://AzureManager");
 
-        public static IAzure AutheticatedAzure { get; private set; }
+        public static IAzure AuthenticatedAzure { get; private set; } = null;
 
         //getting the access token for a given Microsoft resource API
         private static async Task<Dictionary<string, string>> GetAccessTokenAsync(string resourceApi,PlatformParameters platformParams)
@@ -68,7 +68,10 @@ namespace AzureManagementLib
 
         public static async Task<IAzure> Authenticate(PlatformParameters platformParams)
         {
-           
+            if (AuthenticatedAzure != null)
+            {
+                return AuthenticatedAzure;
+            }
             try { 
             Dictionary<string, string> authDataDict = await GetAccessTokenAsync(AzureResourceManagement, platformParams).ConfigureAwait(false);
 
@@ -95,7 +98,7 @@ namespace AzureManagementLib
 
                 // var list = azure1.SqlServers.List()[1];
                 //        var subs=azure.Subscriptions;
-                AuthenticationManager.AutheticatedAzure = azure1;
+                AuthenticationManager.AuthenticatedAzure = azure1;
 
                 return azure1;
             }

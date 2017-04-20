@@ -25,6 +25,11 @@ namespace AzureManagementLib
             AuthenticatedAzure = azure;
         }
 
+        public SqlServerService()
+        {
+            AuthenticatedAzure = AuthenticationManager.
+        }
+
         private static SqlServerModel ISqlServerConvert(ISqlServer sqlServer)
         {
             
@@ -36,9 +41,10 @@ namespace AzureManagementLib
         {
             var returnList = new List<SqlServerModel>();
 
-              sqlServers =
+            sqlServers =
               await Task.Run(() => { return AuthenticatedAzure.SqlServers.List(); })
                   .ConfigureAwait(false);
+
             foreach (var sqlServer in sqlServers)
             {
                 returnList.Add(ISqlServerConvert(sqlServer));

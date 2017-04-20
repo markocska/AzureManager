@@ -16,7 +16,7 @@ using System.Threading;
 using HelloAndroid.Adapters;
 //using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace HelloAndroid
+namespace AzureManager
 {
     [Activity(Label = "Hello Android!", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
@@ -28,7 +28,7 @@ namespace HelloAndroid
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager layoutManager;
         SqlServerAdapter sqlServerAdapter;
-        List<SqlServerModelView> sqlServerList;
+        IList<SqlServerModel> sqlServerList;
 
 
         protected async override void OnCreate(Bundle bundle)

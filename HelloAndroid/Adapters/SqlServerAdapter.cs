@@ -15,7 +15,7 @@ using HelloAndroid.ViewHolders;
 
 namespace HelloAndroid.Adapters
 {
-    public class SqlServerAdapter : AzureItemAdapter<SqlServerModelView>
+    public class SqlServerAdapter : AzureItemAdapter<SqlServerModel>
     {
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
@@ -32,13 +32,13 @@ namespace HelloAndroid.Adapters
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             View itemView = LayoutInflater.From(parent.Context).
-                Inflate(Resource.Layout.SqlServerLayout, parent, false);
+                Inflate(Resource.Layout.SqlServer, parent, false);
 
             SqlServerViewHolder sqlVh = new SqlServerViewHolder(itemView);
             return sqlVh;
         }
 
-        public SqlServerAdapter(List<SqlServerModelView> sqlServerList) : base(sqlServerList)
+        public SqlServerAdapter(List<SqlServerModel> sqlServerList) : base(sqlServerList)
         {
             
         }
