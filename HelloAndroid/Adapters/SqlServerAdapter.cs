@@ -25,7 +25,7 @@ namespace HelloAndroid.Adapters
             vh.ServerName.Text = AzureItemViews[position].ServerName;
             vh.ResourceGroupName.Text = AzureItemViews[position].ResourceGroupName;
             vh.SubscriptionName.Text = AzureItemViews[position].SubscriptionName;
-            vh.Status.Text = AzureItemViews[position].Status;
+           // vh.Status.Text = AzureItemViews[position].Status;
 
         }
 

@@ -3,25 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
+    android:orientation="horizontal">
+    <ImageView
         android:layout_height="wrap_content"
-        android:id="@+id/sqlServerName" />
+        android:layout_width="0dp"
+        android:id="@+id/sqlServerImage"
+        android:visibility="gone" />
     <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sqlStatus" />
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:id="@+id/sqlServerName"
+        android:textColor="@color/cardview_dark_background"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
     <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sqlLocation" />
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/sqlLocation"
+        android:textIsSelectable="true"
+        android:textAlignment="center"
+        android:gravity="center" />
     <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sqlSubscriptionName" />
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:id="@+id/sqlResourceGroupName"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="#00ff0000" />
     <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sqlResourceGroupName" />
+        android:layout_width="0dp"
+        android:id="@+id/sqlSubscriptionName"
+        android:visibility="gone" />
 </LinearLayout>

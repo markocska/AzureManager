@@ -1,0 +1,24 @@
+Flowers.AddCommentActivity, Flowers;md5323d6593185735df52aaa8e5de13dcd2.AddCommentActivity
+Flowers.AddCommentActivity, Flowers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5323d6593185735df52aaa8e5de13dcd2.AddCommentActivity
+Flowers.AddCommentActivity;md5323d6593185735df52aaa8e5de13dcd2.AddCommentActivity
+flowers.AddCommentActivity;md5323d6593185735df52aaa8e5de13dcd2.AddCommentActivity
+Flowers.DetailsActivity, Flowers;md5323d6593185735df52aaa8e5de13dcd2.DetailsActivity
+Flowers.DetailsActivity, Flowers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5323d6593185735df52aaa8e5de13dcd2.DetailsActivity
+Flowers.DetailsActivity;md5323d6593185735df52aaa8e5de13dcd2.DetailsActivity
+flowers.DetailsActivity;md5323d6593185735df52aaa8e5de13dcd2.DetailsActivity
+Flowers.MainActivity, Flowers;md5323d6593185735df52aaa8e5de13dcd2.MainActivity
+Flowers.MainActivity, Flowers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5323d6593185735df52aaa8e5de13dcd2.MainActivity
+Flowers.MainActivity;md5323d6593185735df52aaa8e5de13dcd2.MainActivity
+flowers.MainActivity;md5323d6593185735df52aaa8e5de13dcd2.MainActivity
+Flowers.Helpers.ActivityBaseEx, Flowers;md550670e6e4a5635adbcb6f88e942ff6bd.ActivityBaseEx
+Flowers.Helpers.ActivityBaseEx, Flowers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md550670e6e4a5635adbcb6f88e942ff6bd.ActivityBaseEx
+Flowers.Helpers.ActivityBaseEx;md550670e6e4a5635adbcb6f88e942ff6bd.ActivityBaseEx
+flowers.helpers.ActivityBaseEx;md550670e6e4a5635adbcb6f88e942ff6bd.ActivityBaseEx
+GalaSoft.MvvmLight.Helpers.ObservableAdapter`1, GalaSoft.MvvmLight.Platform;md57abdb9e5bf2dc6edac6ff12b94f1885d.ObservableAdapter_1
+GalaSoft.MvvmLight.Helpers.ObservableAdapter`1, GalaSoft.MvvmLight.Platform, Version=5.1.0.21519, Culture=neutral, PublicKeyToken=null;md57abdb9e5bf2dc6edac6ff12b94f1885d.ObservableAdapter_1
+GalaSoft.MvvmLight.Helpers.ObservableAdapter`1;md57abdb9e5bf2dc6edac6ff12b94f1885d.ObservableAdapter_1
+galasoft.mvvmlight.helpers.ObservableAdapter_1;md57abdb9e5bf2dc6edac6ff12b94f1885d.ObservableAdapter_1
+GalaSoft.MvvmLight.Views.ActivityBase, GalaSoft.MvvmLight.Platform;md53c08667da5270c0978fac10eaa6f71aa.ActivityBase
+GalaSoft.MvvmLight.Views.ActivityBase, GalaSoft.MvvmLight.Platform, Version=5.1.0.21519, Culture=neutral, PublicKeyToken=null;md53c08667da5270c0978fac10eaa6f71aa.ActivityBase
+GalaSoft.MvvmLight.Views.ActivityBase;md53c08667da5270c0978fac10eaa6f71aa.ActivityBase
+galasoft.mvvmlight.views.ActivityBase;md53c08667da5270c0978fac10eaa6f71aa.ActivityBase

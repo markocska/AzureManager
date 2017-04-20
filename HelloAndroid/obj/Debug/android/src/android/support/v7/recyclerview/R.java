@@ -171,11 +171,11 @@ containing a value of this type.
         public static final int optionsButton=0x7f050003;
         public static final int searchTestView=0x7f050002;
         public static final int sqlLocation=0x7f050007;
-        public static final int sqlResourceGroupName=0x7f050009;
-        public static final int sqlServerName=0x7f050005;
+        public static final int sqlResourceGroupName=0x7f050008;
+        public static final int sqlServerImage=0x7f050005;
+        public static final int sqlServerName=0x7f050006;
         public static final int sqlServerRecyclerView=0x7f050004;
-        public static final int sqlStatus=0x7f050006;
-        public static final int sqlSubscriptionName=0x7f050008;
+        public static final int sqlSubscriptionName=0x7f050009;
     }
     public static final class layout {
         public static final int main=0x7f030000;

@@ -42,10 +42,14 @@
   <ItemGroup>
     <Compile Include="AuthenticationManager.cs" />
     <Compile Include="AzureResourceManager.cs" />
-    <Compile Include="CertificateLoginInformation.cs" />
-    <Compile Include="ModelView\SqlServerModelView.cs" />
+    <Compile Include="Models\AzureResource.cs" />
+    <Compile Include="Models\IAzureResource.cs" />
+    <Compile Include="Models\SqlDatabaseModel.cs" />
+    <Compile Include="Models\SqlServerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlDatabaseManager.cs" />
+    <Compile Include="Services\IAzureService.cs" />
+    <Compile Include="Services\ISqlServerService.cs" />
+    <Compile Include="Services\SqlServerService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

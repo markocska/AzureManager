@@ -116,6 +116,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewHolders\HeaderViewHolder.cs" />
     <Compile Include="ViewHolders\SqlServerViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -14,12 +14,12 @@ namespace AzureManagementLib
     public class AzureResourceManager 
     {
         public IAzure AuthenticatedAzure { get; private set; }
-        public SqlDatabaseManager SqlDbManager { get; private set; }
+        public SqlServerService SqlDbManager { get; private set; }
 
         private AzureResourceManager(IAzure authenticatedAzure)
         {
             AuthenticatedAzure = authenticatedAzure;
-            SqlDbManager = new SqlDatabaseManager(AuthenticatedAzure);
+            SqlDbManager = new SqlServerService(AuthenticatedAzure);
            
         }
 

@@ -182,20 +182,20 @@ namespace HelloAndroid
 			// aapt resource value: 0x7f050007
 			public const int sqlLocation = 2131034119;
 			
-			// aapt resource value: 0x7f050009
-			public const int sqlResourceGroupName = 2131034121;
+			// aapt resource value: 0x7f050008
+			public const int sqlResourceGroupName = 2131034120;
 			
 			// aapt resource value: 0x7f050005
-			public const int sqlServerName = 2131034117;
+			public const int sqlServerImage = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public const int sqlServerName = 2131034118;
 			
 			// aapt resource value: 0x7f050004
 			public const int sqlServerRecyclerView = 2131034116;
 			
-			// aapt resource value: 0x7f050006
-			public const int sqlStatus = 2131034118;
-			
-			// aapt resource value: 0x7f050008
-			public const int sqlSubscriptionName = 2131034120;
+			// aapt resource value: 0x7f050009
+			public const int sqlSubscriptionName = 2131034121;
 			
 			static Id()
 			{
