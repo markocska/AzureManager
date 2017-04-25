@@ -20,7 +20,6 @@ using Microsoft.Rest;
 using Microsoft.Rest.Azure.Authentication;
 using static Microsoft.Azure.Management.Resource.Fluent.Core.RestClient;
 using Microsoft.Rest.TransientFaultHandling;
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.Azure.Management.Sql.Fluent.Models;
 
 namespace AzureManagementLib
@@ -49,7 +48,7 @@ namespace AzureManagementLib
                     // var param = new PlatformParameters();
                     authContex.ExtendedLifeTimeEnabled = false;
 
-                    var authResult = await authContex.AcquireTokenAsync(AzureResourceManagement, ClientId, RedirectUri, platformParams).ConfigureAwait(false);
+                    var authResult = await authContex.AcquireTokenAsync(AzureResourceManagement, ClientId, RedirectUri,platformParams).ConfigureAwait(false);
 
 
                     var results = new Dictionary<string, string>();
@@ -66,12 +65,9 @@ namespace AzureManagementLib
            
         }
 
-        public static async Task<IAzure> Authenticate(PlatformParameters platformParams)
+        public static async Task<AzureResourceManager> Authenticate(PlatformParameters platformParams)
         {
-            if (AuthenticatedAzure != null)
-            {
-                return AuthenticatedAzure;
-            }
+            
             try { 
             Dictionary<string, string> authDataDict = await GetAccessTokenAsync(AzureResourceManagement, platformParams).ConfigureAwait(false);
 
@@ -100,7 +96,7 @@ namespace AzureManagementLib
                 //        var subs=azure.Subscriptions;
                 AuthenticationManager.AuthenticatedAzure = azure1;
 
-                return azure1;
+                return new AzureResourceManager(azure1);
             }
              catch (Exception ex)
             {

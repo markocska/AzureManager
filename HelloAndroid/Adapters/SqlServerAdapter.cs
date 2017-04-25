@@ -21,11 +21,11 @@ namespace HelloAndroid.Adapters
         {
             SqlServerViewHolder vh = holder as SqlServerViewHolder;
 
-            vh.Location.Text = AzureItemViews[position].Location;
-            vh.ServerName.Text = AzureItemViews[position].ServerName;
-            vh.ResourceGroupName.Text = AzureItemViews[position].ResourceGroupName;
-            vh.SubscriptionName.Text = AzureItemViews[position].SubscriptionName;
-           // vh.Status.Text = AzureItemViews[position].Status;
+           // vh.Location.Text = AzureItemViews[position].Location;
+           // vh.ServerName.Text = AzureItemViews[position].ServerName;
+           // vh.ResourceGroupName.Text = AzureItemViews[position].ResourceGroupName;
+           // vh.SubscriptionName.Text = AzureItemViews[position].SubscriptionName;
+           //// vh.Status.Text = AzureItemViews[position].Status;
 
         }
 

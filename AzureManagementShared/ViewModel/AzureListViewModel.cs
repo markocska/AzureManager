@@ -12,8 +12,8 @@ using Microsoft.Practices.ServiceLocation;
 namespace AzureManagementShared.ViewModel
 {
     public class AzureListViewModel<T, K> : ViewModelBase
-        where K : AzureViewModelBase, new()
         where T : IAzureResource
+        where K : AzureViewModelBase
     {
 
         private readonly IAzureService<T> _azureService;
@@ -26,8 +26,7 @@ namespace AzureManagementShared.ViewModel
 
         public ObservableCollection<K> Resources { get; private set; }
 
-        public RelayCommand RefreshCommand
-        {
+        public RelayCommand RefreshCommand { 
             get
             {
                 return _refreshCommand

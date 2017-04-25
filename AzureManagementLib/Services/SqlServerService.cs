@@ -27,14 +27,14 @@ namespace AzureManagementLib
 
         public SqlServerService()
         {
-            AuthenticatedAzure = AuthenticationManager.
+           // AuthenticatedAzure = AuthenticationManager.
         }
 
-        private static SqlServerModel ISqlServerConvert(ISqlServer sqlServer)
-        {
+        //private static SqlServerModel ISqlServerConvert(ISqlServer sqlServer)
+        //{
             
-            return new SqlServerModel(sqlServer);
-        }
+        //    return new SqlServerModel(sqlServer);
+        //}
 
 
        public async Task<IList<SqlServerModel>> GetResourcesAsync()
@@ -47,7 +47,7 @@ namespace AzureManagementLib
 
             foreach (var sqlServer in sqlServers)
             {
-                returnList.Add(ISqlServerConvert(sqlServer));
+                returnList.Add(new SqlServerModel(sqlServer));
             }
             
 

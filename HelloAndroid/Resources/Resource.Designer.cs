@@ -173,6 +173,9 @@ namespace HelloAndroid
 			// aapt resource value: 0x7f050000
 			public const int item_touch_helper_previous_elevation = 2131034112;
 			
+			// aapt resource value: 0x7f050004
+			public const int listView1 = 2131034116;
+			
 			// aapt resource value: 0x7f050003
 			public const int optionsButton = 2131034115;
 			
@@ -190,9 +193,6 @@ namespace HelloAndroid
 			
 			// aapt resource value: 0x7f050006
 			public const int sqlServerName = 2131034118;
-			
-			// aapt resource value: 0x7f050004
-			public const int sqlServerRecyclerView = 2131034116;
 			
 			// aapt resource value: 0x7f050009
 			public const int sqlSubscriptionName = 2131034121;

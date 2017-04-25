@@ -1,6 +1,9 @@
-﻿using GalaSoft.MvvmLight;
+﻿using Android.App;
+using AzureManagementLib;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,8 +14,10 @@ namespace AzureManagementShared.ViewModel
     {
         private readonly INavigationService _navigationService;
         private RelayCommand<string> _navigateToPage;
-        private RelayCommand _loginCommand;
-        private RelayCommand _logoutCommand;
+        private RelayCommand<PlatformParameters> _loginCommand;
+        private RelayCommand<PlatformParameters> _logoutCommand;
+
+        private AzureResourceManager resourceManager;
 
         private RelayCommand<string> NavigateToPageCommand
         {
@@ -32,20 +37,21 @@ namespace AzureManagementShared.ViewModel
                         ));
             }
         }
-
-        private RelayCommand LoginCommand
+        
+        private RelayCommand<PlatformParameters> LoginCommand
         {
             get
             {
                 return _loginCommand
-                    ?? ( new RelayCommand(
-                        () =>
+                    ?? (new RelayCommand<PlatformParameters>(
+                        async (PlatformParameters platformParams) =>
                         {
+#if __ANDROID__
 
+                            resourceManager = await AuthenticationManager.Authenticate(platformParams);
+#endif
                         }
-                        )
-                    
-                    )
+                        ));
             }
         }
     }

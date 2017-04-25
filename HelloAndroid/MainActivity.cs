@@ -39,35 +39,35 @@ namespace AzureManager
             platformParam = new PlatformParameters(this, true);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+           // SetContentView(Resource.Layout.Main);
 
-            mRecyclerView = FindViewById<RecyclerView>(Resource.Id.sqlServerRecyclerView);
-            layoutManager = new LinearLayoutManager(this);
-            mRecyclerView.SetLayoutManager(layoutManager);
+           // mRecyclerView = FindViewById<RecyclerView>(Resource.Id.sqlServerRecyclerView);
+          //  layoutManager = new LinearLayoutManager(this);
+        //    mRecyclerView.SetLayoutManager(layoutManager);
 
-            Button optionsButton = FindViewById<Button>(Resource.Id.optionsButton);
+//            Button optionsButton = FindViewById<Button>(Resource.Id.optionsButton);
 
-            optionsButton.Click += (object sender, EventArgs e) =>
-           {
-                //Dictionary<string,string> dict = await AuthenticationManager.GetAccessTokenAsync("lucu", platformParam);
-                try
-               {
-               }
-               catch (Exception ex)
-               {
-                   string exc = ex.Message;
-               }
-           };
+           // optionsButton.Click += (object sender, EventArgs e) =>
+           //{
+           //     //Dictionary<string,string> dict = await AuthenticationManager.GetAccessTokenAsync("lucu", platformParam);
+           //     try
+           //    {
+           //    }
+           //    catch (Exception ex)
+           //    {
+           //        string exc = ex.Message;
+           //    }
+           //};
 
             await LoginHandler();
             try
             {
-                sqlServerList = await azureResourceManager.SqlDbManager.GetSqlServersAsync().ConfigureAwait(false);
+               // sqlServerList = await azureResourceManager.SqlDbManager.GetSqlServersAsync().ConfigureAwait(false);
                 RunOnUiThread(() =>
                 {
-                    sqlServerAdapter = new SqlServerAdapter(sqlServerList);
+                //    sqlServerAdapter = new SqlServerAdapter(sqlServerList);
 
-                    mRecyclerView.SetAdapter(sqlServerAdapter);
+                  //  mRecyclerView.SetAdapter(sqlServerAdapter);
                 });
             }
             catch (Exception e)
@@ -89,7 +89,7 @@ namespace AzureManager
             RunOnUiThread(() => { dialog = alertBuilder.Show(); });
             try
             {
-                azureResourceManager = await AzureResourceManager.Create(platformParam);
+                azureResourceManager = await AuthenticationManager.Authenticate(platformParam);
             }
             catch (Exception e)
             {

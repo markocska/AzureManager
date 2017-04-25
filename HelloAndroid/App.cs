@@ -11,6 +11,8 @@ using Android.Views;
 using Android.Widget;
 using AzureManagementShared;
 using GalaSoft.MvvmLight.Views;
+using AzureManagementShared.ViewModel;
+using AzureManagementLib.ModelView;
 
 namespace HelloAndroid
 {
@@ -23,8 +25,8 @@ namespace HelloAndroid
             {
                 var nav = new NavigationService();
                 nav.Configure(
-                        ViewModelLocator.sqlDatabaseListPageKey,
-                        typeof(AzureListViewModel<>)
+                        ViewModelLocator.sqlServerListPageKey,
+                         typeof(AzureListViewModel<SqlServerModel,SqlServerViewModel>));
             }
         }
     }

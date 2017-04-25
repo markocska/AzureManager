@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.Management.Fluent;
+﻿using AzureManagementLib.Services;
+using Microsoft.Azure.Management.Fluent;
 using Microsoft.Azure.Management.Resource.Fluent.Core;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
@@ -14,20 +15,26 @@ namespace AzureManagementLib
     public class AzureResourceManager 
     {
         public IAzure AuthenticatedAzure { get; private set; }
-        public SqlServerService SqlDbManager { get; private set; }
 
-        private AzureResourceManager(IAzure authenticatedAzure)
+        private SqlServerService _sqlServerService;
+        public SqlServerService SqlServerService {
+            get
+            {
+                return _sqlServerService
+                    ?? new SqlServerService(AuthenticatedAzure);
+            }
+        }
+
+        public AzureResourceManager(IAzure authenticatedAzure)
         {
             AuthenticatedAzure = authenticatedAzure;
-            SqlDbManager = new SqlServerService(AuthenticatedAzure);
            
         }
 
-        public static async Task<AzureResourceManager> Create(PlatformParameters platformParams)
-        {
-            IAzure authenticatedAzure = await AuthenticationManager.Authenticate(platformParams);
-            return new AzureResourceManager(authenticatedAzure);
-        }
+        //public T CreateService<T>() where T : IAzureService
+        //{
+
+        //}
 
         public void changeSubscription()
         {
